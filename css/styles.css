@@ -1,39 +1,91 @@
+@font-face {
+    font-family: 'graf1';
+    src: url('../fonts/capture_it-webfont.woff2') format('woff2'),
+         url('../fonts/capture_it-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'graf2';
+    src: url('../fonts/capture_it_2-webfont.woff2') format('woff2'),
+         url('../fonts/capture_it_2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+* {
+    font-family: "graf1";
+    letter-spacing: 0.2rem;
+}
+
 body {
-    height: 100vh;
+    height: 98vh;
     display: flex;
+    width: 100vw;
 }
 
 .left-side {
     width: 40vw;
-    border: solid blue;
     display: flex;
     flex-direction: column;
+    background-image: url(../img/brett-jordan-U2q73PfHFpM-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .photo-banner {
-    border: solid blue;
-    margin-top: 5rem;
+    position: relative;
+    display: flex;
+    top: 40%;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    background: rgba(245, 245, 245, 0.705);
+}
+
+.logo {
+    height: 20vh;
+    margin: 1rem;
+    position: relative;
+    left: 22.5%;
+    top: 15%;
+}
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 15%;
+    font-size: 1.5rem;
+}
+.slogan {
+    font-size: 1rem;
 }
 
 .right-side {
     width: 60vw;
-    border: solid red;
     display: flex;
     flex-direction: column;
+    background-color: whitesmoke;
 }
 
 .top-paragraph {
     height: 30vh;
-    border: solid;
 }
 
 .form {
     height: 35vh;
-    border: dashed
+    background-color: rgb(228, 224, 219);
 }
 .footer {
     height: 35vh;
-    border: solid
+
 }
 
 .form-row {
@@ -43,4 +95,12 @@ body {
 .label-input-combo {
     display: flex;
     flex-direction: column;
+    margin-left: 5em;
+    margin-top: 1em;
+}
+
+h2 {
+    position: relative;
+    top: 10vh;
+    left: 5vh;
 }
