@@ -13,18 +13,76 @@
 
 <body>
     <div class="left-side">
-        <div class="photo-banner"></div>
+        <div class="photo-banner"> BANNER TEXT</div>
 
     </div>
 
     <div class="right-side">
-        <div class="top-paragraph"></div>
+        <div class="top-paragraph">
+
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eos 
+                maiores totam eveniet, a quaerat. Iste officia placeat mollitia fugiat exercitationem 
+                eveniet asperiores dolorum illo rem itaque perferendis, explicabo aliquid!</h2>
+        </div>
             <div class="form">
                 <form>
-                    <header></header>
+                    <header>HEADER</header>
+                        <div class="form-row">
+                            
+                            <div class="label-input-combo">
+                                <label for="first-name"><span>First Name:</span>
+                                    <strong><span aria-label = "required">*</span></strong>
+                                </label>
+                                <input type="text" id="first-name" name = "user-first-name" required placeholder="John">
+                            </div>
+
+                            <div class="label-input-combo">
+                                <label for="last-name">Last Name:</label>
+                                <input type="text" id="last-name" name = "user-last-name" placeholder="Doe">
+                            </div>
+
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="label-input-combo">
+                                <label for="email"><span>Email:</span>
+                                    <strong><span aria-label = "required">*</span></strong>
+                                </label>
+                                <input type="email" id = "email" name = "email" required placeholder="example@email.com">
+                            </div>
+
+                            <div class="label-input-combo">
+                                <label for="telephone">Phone Number: </label>
+                                <input type="tel" name = "user-phone-number" id = "telephone">
+                            </div>
+
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="label-input-combo">
+                                <label for="password"><span>Password:</span> 
+                                    <strong><span aria-label = "required">*</span></strong>
+                                </label>
+                                <input type="password" name = "user-password" id = "password" required>
+                            </div>
+
+                            <div class="label-input-combo">
+                                <label for="confirm-password"> <span>Confirm Password:</span>
+                                    <strong><span aria-label = "required">*</span></strong>
+                                </label>
+                                <input type="password" name = "user-confirm-password" id = "confirm-password" required>
+                            </div>
+                        </div>
+
                 </form>
             </div>
-        <div class="footer"></div>
+
+        <div class="footer">
+            <button type="submit">Create your Account!</button>
+            <div>Already joined the madness? <a href="">Log in!</a></div>
+        </div>
     </div>
 
 </body>

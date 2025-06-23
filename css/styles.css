@@ -6,6 +6,13 @@ body {
 .left-side {
     width: 40vw;
     border: solid blue;
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-banner {
+    border: solid blue;
+    margin-top: 5rem;
 }
 
 .right-side {
@@ -27,4 +34,13 @@ body {
 .footer {
     height: 35vh;
     border: solid
+}
+
+.form-row {
+    display: flex;
+}
+
+.label-input-combo {
+    display: flex;
+    flex-direction: column;
 }
