@@ -1,0 +1,30 @@
+body {
+    height: 100vh;
+    display: flex;
+}
+
+.left-side {
+    width: 40vw;
+    border: solid blue;
+}
+
+.right-side {
+    width: 60vw;
+    border: solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-paragraph {
+    height: 30vh;
+    border: solid;
+}
+
+.form {
+    height: 35vh;
+    border: dashed
+}
+.footer {
+    height: 35vh;
+    border: solid
+}
