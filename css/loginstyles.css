@@ -1,0 +1,89 @@
+:root {
+    --black-lightest-col: #222222;
+    --black-second-col: #1a1a1a;
+    --black-third-col: #131313;
+    --black-fourth-col: #0b0b0b;
+
+    --white-light: #dddddd;
+    --white-mid: #cccccc;
+    --white-dark: #7e7e7e;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../img/login-background.jpg);
+    background-size: 100%;
+}
+
+.label-input-combo {
+    position: relative;
+    left: -10px;
+}
+
+.login-container {
+    position: relative;
+    left: 300px;
+    background-color: rgb(126, 126, 126, 0.4);
+    border: solid #dddddd 3px;
+    border-radius: 30px;
+    width: 450px;
+    height: 400px;
+    backdrop-filter: blur(5px);
+    color:#dddddd
+}
+
+button.login-button {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 15px;
+    left: 175px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    color: #dddddd;
+    letter-spacing: 1px;
+}
+
+button.login-button:hover {
+    opacity: 0.85;
+}
+
+button.login-button:active {
+    opacity: 1;
+}
+
+.join-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 40px;
+    color:#0b0b0b;
+    font-size: 1.25rem;
+}
+
+a[href="../html/index.html"] {
+    letter-spacing: 0;
+}
+
+.banner-text {
+    position: absolute;
+    left: 450px;
+    top: 350px;
+    color: #0b0b0b;
+    width:fit-content;
+    padding: 10px 20px;
+    font-size: 5rem;
+    background-color: rgb(126, 126, 126, 0.4);
+    border: solid #dddddd 3px;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+
+.slogan {
+    width: max-content;
+}

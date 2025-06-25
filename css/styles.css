@@ -1,3 +1,14 @@
+:root {
+    --black-lightest-col: #222222;
+    --black-second-col: #1a1a1a;
+    --black-third-col: #131313;
+    --black-fourth-col: #0b0b0b;
+
+    --white-light: #dddddd;
+    --white-mid: #cccccc;
+    --white-dark: #7e7e7e;
+}
+
 @font-face {
     font-family: 'graf1';
     src: url('../fonts/capture_it-webfont.woff2') format('woff2'),
@@ -6,9 +17,6 @@
     font-style: normal;
 
 }
-
-
-
 
 @font-face {
     font-family: 'graf2';
@@ -19,16 +27,15 @@
 
 }
 
-
 * {
     font-family: "graf1";
     letter-spacing: 0.2rem;
 }
 
 body {
-    height: 98vh;
+    height: 100vh;
     display: flex;
-    width: 100vw;
+    width: auto
 }
 
 .left-side {
@@ -43,36 +50,39 @@ body {
 .photo-banner {
     position: relative;
     display: flex;
-    top: 40%;
+    top: 20%;
     justify-content: center;
     align-items: center;
-    height: 10%;
+    height: 20%;
     background: rgba(245, 245, 245, 0.705);
 }
 
 .logo {
-    height: 20vh;
+    height: 400px;
     margin: 1rem;
     position: relative;
-    left: 22.5%;
-    top: 15%;
+    left: 55%;
+    top: 19%;
 }
 .banner-text {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 15%;
-    font-size: 1.5rem;
+    font-size: 3.5rem;
+    right: 30%;
+    line-height: 1.15;
 }
 .slogan {
-    font-size: 1rem;
+    font-size: 2rem;
+    width: 10ch;
+    
 }
 
 .right-side {
     width: 60vw;
     display: flex;
     flex-direction: column;
-    background-color: whitesmoke;
+    background-color: var(--white-light);
 }
 
 .top-paragraph {
@@ -80,11 +90,13 @@ body {
 }
 
 .form {
-    height: 35vh;
-    background-color: rgb(228, 224, 219);
+    height: 45vh;
+    background-color: var(--white-mid);
+    box-shadow: 0px 5px 25px 0px var(--black-lightest-col);
+
 }
 .footer {
-    height: 35vh;
+    height: 25vh;
 
 }
 
@@ -95,12 +107,101 @@ body {
 .label-input-combo {
     display: flex;
     flex-direction: column;
-    margin-left: 5em;
-    margin-top: 1em;
+    margin-left: 70px;
 }
 
 h2 {
     position: relative;
-    top: 10vh;
-    left: 5vh;
+    top: 10%;
+    left: 5%;
+    width: 1000px;
+}
+
+button {
+    margin: 30px 40px 20px 40px;
+    width: 200px;
+    height: 85px;
+    background: url(../img/buttonbgrd.jpeg);
+    font-size: 3.5rem;
+    border: 0;
+    border-color: #7e7e7e;
+    border-radius: 15px;
+    position: relative;
+    top: 60px;
+}
+
+.login-text {
+    margin-left: 40px;
+    font-size: 1.5rem;
+    position: relative;
+    top: 60px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: graf2;
+    letter-spacing: normal;
+}
+
+header {
+    margin: 20px 40px;
+    font-size: 30px;
+}
+
+input {
+    appearance: none;
+    width: 300px;
+    background-color: var(--black-third-col);
+    border: 0;
+    color: var(--white-light);
+    border-radius: 7.5px;
+    padding: 5px 10px;
+    position: relative;
+    left: 20px;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+input[type = "email"] {
+    font-size: 0.85rem;
+    height: 40px;
+}
+
+input:focus {
+    outline: solid rgba(80, 156, 255, 0.8);
+    box-shadow: 0px 0px 10px rgba(80, 156, 255, 0.8);
+}
+
+input:user-invalid {
+    outline: solid rgba(192, 0, 0, 0.5);
+}
+
+input:user-valid {
+    outline: solid rgba(0, 128, 0, 0.5);
+}
+
+label {
+    font-size: 22px;
+    margin-bottom: 5px;
+    
+}
+
+.bullets {
+    line-height: 1.75;
+}
+
+button:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 1;
+    
+}
+
+button:focus {
+    outline: solid rgba(80, 156, 255, 0.8);
+    box-shadow: 0px 0px 10px rgba(80, 156, 255, 0.8);
 }
